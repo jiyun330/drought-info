@@ -37,4 +37,4 @@ def news2():
     return render_template('news2.html')
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=8000)

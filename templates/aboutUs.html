@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--icon-->
+    <link rel="shortcut icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/4/49/Water_splashes_001.jpg">
+    <!--google Icon-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    
+    <title>가뭄정보포털</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/card.css">
+    <style>
+        #project{
+            background-color: #514F4F;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color : white;
+        }
+        .plan {
+            display:block;
+            margin-top: 40px;
+            clear: both;
+        }
+        .plan li{
+            list-style: none;
+        }
+        .plan h4{
+            position: relative;
+            color: #000; 
+            line-height: 1;
+        }
+        .plan h4:before {
+            content:""; position: absolute;
+            left:-28px; top:50%; transform: translateY(-50%);
+            width: 17px; height: 17px; border-radius: 100%;
+            background:#fff; border: 5px solid #E25F00;
+            box-sizing: border-box;}
+            
+        .plan p{
+            color: #626262;
+            margin-left: 20px;
+        }
+
+        #left{
+            float: left;
+            width: 50%;
+        }
+        #right{
+            float:left;
+            width: 50%;
+        }
+        #content{
+            float: both;
+        }
+        .history div {position: relative; padding: 0 0 0 48px;}
+        .history div:before { content:""; position:absolute; left:67px; top:0;
+          width: 2px; height:100%; background:#ddd;}
+
+
+
+        #red{
+            color:rgb(115, 3, 3);
+            float:right;
+            font-size:15px;
+            margin-right: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="body">
+        <div id="header">
+            <span><a href="/" id="logo">가뭄정보포털</a></span>
+            <!--nav-->
+            <div id="nav">
+                <nav id="topMenu" >
+                    <ul>
+                            <li><a class="menuLink" id="about" href="/aboutUs" style="color: #E25F00">About us</a></li>
+                            <li><a class="menuLink" id="model" href="/model">Model</a></li>
+                            <li><a class="menuLink" id="dash" href="/dashboard">Dashboard</a></li>
+                            <li><a class="menuLink" id="news" href="/news">News</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!--content-->
+        <div id="content">
+            <h2 id="project" style="text-align: center;">코드스테이츠 AI 13기 cp1 프로젝트</h2>
+            <br/>
+            <h3 style="text-align: center;">💻 15팀 멤버 및 역할</h3>
+            
+            <div class="flip">
+                <div class="flip-box">
+                    <div class="card">
+                        <div class="front">
+                            <h2>우지윤</h2>
+                        </div>
+                        <div class="back">
+                            <h2>Data Engineer</h2>
+                            <p>> 웹 페이지 디자인 및 구현</p>
+                            <p>> 웹 페이지 기능 연결</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box">
+                    <div class="card">
+                        <div class="front">
+                            <h2>조승준</h2>
+                        </div>
+                        <div class="back">
+                            <h2>Data Scientist</h2>
+                            <p>> 인공지능 모델 실험 및 구현</p>
+                            <p>> 모델 성능 개선</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box">
+                    <div class="card">
+                        <div class="front">
+                            <h2>조여진</h2>
+                        </div>
+                        <div class="back">
+                            <h2>Data Analyst</h2>
+                            <p>> 데이터 분석 및 설계</p>
+                            <p>> 데이터 시각화</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box">
+                    <div class="card">
+                        <div class="front">
+                            <h2>한종준</h2>
+                        </div>
+                        <div class="back">
+                            <h2>Data Scientist</h2>
+                            <p>> 인공지능 모델 실험 및 구현</p>
+                            <p>> 모델 성능 분석</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <br/>
+            <br/><br/><br/>
+            
+            <div class="plan">
+                <h3 style="text-align: center;">💻 프로젝트 개발 일정</h3>
+                <div id="left">
+                    <div class="history">
+                        <div>
+                            <ul>
+                                <li>
+                                    <h4>8월 30일 화요일</h4>
+                                    <p>프로젝트 주제 선정</p>
+                                </li>
+                                <li>
+                                    <h4>8월 31일 수요일</h4>
+                                    <p>프로젝트 기획서 작성</p>
+                                </li>
+                                <li>
+                                    <h4>9월 1일 목요일</h4>
+                                    <p>데이터 수집(1/2)</p>
+                                    <p>머신러닝 모델 선행 연구 및 레퍼런스 탐색</p>
+                                    <p>Flask 웹 프레임워크로 html 및 css 제작(1/2)</p>
+                                </li>
+                                <li>
+                                    <h4>9월 2일 금요일</h4>
+                                    <p>데이터 수집(2/2)</p>
+                                    <p>데이터베이스 설계</p>
+                                    <p>Flask 웹 프레임워크로 html 및 css 제작(2/2)</p>
+                                </li>
+                                <li>
+                                    <h4>9월 3~4일</h4>
+                                    <p>주말</p>
+                                </li>
+                                <li>
+                                    <h4>9월 5일 월요일</h4>
+                                    <p>데이터 정제 및 정규화</p>
+                                    <p>데이터 시각화(대시보드)</p>
+                                    <p>웹 페이지 기능 연결_뉴스 페이지(1/2)</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="right">
+                    <div class="history">
+                        <span id="red">
+                            *** 주말 및 공휴일 : 필요 시에 프로젝트 진행
+                        </span><br/><br/>
+                        <div>
+                            <ul> 
+                                <li>
+                                    <h4>9월 6일 화요일</h4>
+                                    <p>머신러닝 모델링(1/2)</p>
+                                    <p>웹 페이지 기능 연결_뉴스 페이지(2/2)</p>
+                                </li>
+                                <li>
+                                    <h4>9월 7일 수요일</h4>
+                                    <p>머신러닝 모델링(2/2)</p>
+                                    <p>웹 페이지 기능 연결_대시보드 페이지</p>
+                                </li>
+                                <li>
+                                    <h4>9월 8일 목요일</h4>
+                                    <p>머신러닝 모델 성능</p>
+                                    <p>웹 페이지 기능 연결_모델 페이지)</p>
+                                </li>
+                                <li>
+                                    <h4>9월 8~12일</h4>
+                                    <p>추석연휴</p>
+                                </li>
+                                <li>
+                                    <h4>9월 13일 화요일</h4>
+                                    <p>발표 자료 작성 및 발표 영상 녹화</p>
+                                    <p>프로젝트 결과물 제출</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div id="content">
+
+            </div>
+        </div>
+
+
+        <div>
+            <footer id="footer">
+                <!--copyright&info-->
+                <div class="copyright">
+                    <p>Copyright © 2022 CP1 ALL RIGHT RESERVED.</p>
+                    <div id="info">
+                        <span>코드스테이츠 AI 13기</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>15팀 - 우지윤 | 조승준 | 조여진 | 한종준</span>
+                        <br/><br/>
+                        <span class="material-symbols-rounded">call</span> 02-123-4567<br/>
+                        <span class="material-symbols-rounded">mail</span> codestates_cp1@email.co.kr<br/>
+                        <span class="material-symbols-rounded">location_on</span> 서울특별시 서초구 서초대로 396, 강남빌딩 20층(스파크플러스 강남 2호점)
+                    </div>
+                </div>
+                    
+                <!--contact-->
+                <div class="contact">
+                    <p>Contact US</p>
+                    <form id="frm" method="get" action="#">
+                        <input id="email" name="email" type="text" placeholder="Your email address" required><br/>
+                        <textarea id="message" name="message" cols="5" rows="5" placeholder="Message" required></textarea>
+                        <input id="send" type="submit" value="SEND" onclick="document.getElementById('frm').submit();">
+                </div>
+            
+        </div>
+
+    </div>
+
+
+</body>
+</html>

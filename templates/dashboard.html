@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/4/49/Water_splashes_001.jpg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <title>가뭄정보포털</title>
+    <link rel="stylesheet" href="static/style.css">
+    <style>
+        #title{
+            background-color: #514F4F;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color : white;
+        }
+        .tableauPlaceholder{
+            margin : 50px 70px 50px 70px;
+        }
+    </style>
+</head>
+<body>
+    <div id="body">
+        <div id="header">
+            <span><a href="/" id="logo">가뭄정보포털</a></span>
+            <!--nav-->
+            <div id="nav">
+                <nav id="topMenu" >
+                    <ul>
+                            <li><a class="menuLink" id="about" href="/aboutUs">About us</a></li>
+                            <li><a class="menuLink" id="model" href="/model">Model</a></li>
+                            <li><a class="menuLink" id="dash" href="/dashboard" style="color: #E25F00">Dashboard</a></li>
+                            <li><a class="menuLink" id="news" href="/news">News</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!--content-->
+        <div id="content">
+            <h2 id="title" style="text-align: center;">가뭄 대시보드</h2>
+            <div class='tableauPlaceholder' id='viz1663039989917' style='position: relative'>
+                <noscript>
+                    <a href='#'><img alt='가뭄예측 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;_1&#47;_16630397588380&#47;sheet3&#47;1_rss.png' style='border: none' /></a>
+                </noscript>
+                <object class='tableauViz'  style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                    <param name='embed_code_version' value='3' /> 
+                    <param name='path' value='views&#47;_16630397588380&#47;sheet3?:language=ko-KR&amp;:embed=true&amp;publish=yes' /> 
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;_1&#47;_16630397588380&#47;sheet3&#47;1.png' /> 
+                    <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='ko-KR' />
+                    <param name='filter' value='publish=yes' />
+                </object>
+            </div>                
+            
+            <script type='text/javascript'>                    
+                var divElement = document.getElementById('viz1663039989917');                    
+                var vizElement = divElement.getElementsByTagName('object')[0];                    
+                if ( divElement.offsetWidth > 800 ) { 
+                    vizElement.style.width='1200px';vizElement.style.height='927px';
+                } else if (divElement.offsetWidth > 500 ) { 
+                        vizElement.style.width='1200px';vizElement.style.height='927px';
+                } else { 
+                    vizElement.style.width='100%';vizElement.style.height='2177px';
+                }                     var scriptElement = document.createElement('script');                    
+                
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);               
+            </script>
+        </div>
+
+
+        <div>
+            <footer id="footer">
+                <!--copyright&info-->
+                <div class="copyright">
+                    <p>Copyright © 2022 CP1 ALL RIGHT RESERVED.</p>
+                    <div id="info">
+                        <span>코드스테이츠 AI 13기</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>15팀 - 우지윤 | 조승준 | 조여진 | 한종준</span>
+                        <br/><br/>
+                        <span class="material-symbols-rounded">call</span> 02-123-4567<br/>
+                        <span class="material-symbols-rounded">mail</span> codestates_cp1@email.co.kr<br/>
+                        <span class="material-symbols-rounded">location_on</span> 서울특별시 서초구 서초대로 396, 강남빌딩 20층(스파크플러스 강남 2호점)
+                    </div>
+                </div>
+                    
+                <!--contact-->
+                <div class="contact">
+                    <p>Contact US</p>
+                    <form id="frm" method="get" action="#">
+                        <input id="email" name="email" type="text" placeholder="Your email address" required><br/>
+                        <textarea id="message" name="message" cols="5" rows="5" placeholder="Message" required></textarea>
+                        <input id="send" type="submit" value="SEND" onclick="document.getElementById('frm').submit();">
+                </div>
+            
+        </div>
+
+    </div>
+
+
+</body>
+</html>
